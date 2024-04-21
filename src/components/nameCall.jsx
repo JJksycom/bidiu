@@ -4,13 +4,11 @@ export default function NameCall(props) {
   return (
     <>
       {/* <div>NameCall</div> */}
-      {props.nackName.map((item) => {
-        return (
-          <ul>
-            <li>{item}</li>
-          </ul>
-        );
-      })}
+      <ul>
+        {props.nackName.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
     </>
   );
 }
