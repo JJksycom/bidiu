@@ -5,6 +5,7 @@ import React, { useState } from "react";
 // import { LetterOne, Two, Three, Four } from "./letter/one";
 // import Transform from "./letter/rmb_dollar转化";
 import Checkboxpractice from "./components/checkboxpractice";
+import ShoukongSelect from "./components/受控Select";
 
 function App() {
   // const somewhere = [
@@ -21,6 +22,7 @@ function App() {
   // const handleChange = (number) => {
   //   console.log("this number is", number);
   // };
+
   return (
     <div className="App">
       {/* <Transform />
@@ -40,6 +42,7 @@ function App() {
       </Three>{" "}
       <Four shuju={shuju} handleChange={handleChange} /> */}
       <Checkboxpractice />
+      <ShoukongSelect />
     </div>
   );
 }
